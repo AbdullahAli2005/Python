@@ -1,0 +1,21 @@
+CREATE TABLE public.politicians (
+  id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+  name text NOT NULL,
+  country text,
+  education_level text,
+  years_in_power double precision,
+  grew_up_in text,
+  criminal_cases smallint,
+  convictions smallint,
+  performance_hdi double precision,
+  performance_gdp double precision,
+  performance_gini double precision,
+  performance_corruption smallint,
+  public_approval smallint,
+  agenda_alignment smallint,
+  u_turns smallint,
+  promises_fulfilled smallint,
+  latest_tenure_evaluation smallint,
+  image_url text,
+  CONSTRAINT politicians_pkey PRIMARY KEY (id)
+);
